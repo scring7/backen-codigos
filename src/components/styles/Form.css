@@ -10,7 +10,7 @@ body {
 }
 
 form {
-    background: linear-gradient(135deg, #5e08fd, #7620ff); /* Gradiente de color de fondo */
+    background: linear-gradient(135deg, #1a6b39, #c1bacc); /* Gradiente de color de fondo */
     border-radius: 30px 0px 30px 0px; /* Bordes personalizados */
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
     padding: 50px 40px;
@@ -20,7 +20,7 @@ form {
 }
 
 form:hover {
-    box-shadow: 0 12px 45px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 45px rgba(202, 223, 17, 0.884);
     transform: scale(1.05); /* Efecto de aumento en hover */
 }
 
@@ -58,7 +58,7 @@ input#btnEnviar {
     width: 100%;
     padding: 12px;
     background-color: #ffffff; /* Botón blanco para contraste */
-    color: #6406df; /* Color de texto del botón */
+    color: #e013b4; /* Color de texto del botón */
     border: none;
     border-radius: 20px; /* Borde más redondeado */
     font-size: 16px;
