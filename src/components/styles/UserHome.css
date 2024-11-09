@@ -57,8 +57,8 @@ input.entry:focus {
 input#btnEnviar {
     width: 100%;
     padding: 12px; /* Un poco más de padding para el botón */
-    background-color: #061d3b; /* Color de fondo actualizado */
-    color: rgb(71, 16, 42);
+    background-color: #2b70c9; /* Color de fondo actualizado */
+    color: rgb(42, 160, 180);
     border: none;
     border-radius: 10px; /* Borde más redondeado para el botón */
     font-size: 16px;
@@ -67,7 +67,7 @@ input#btnEnviar {
 }
 
 input#btnEnviar:hover {
-    background-color: #740a0a; /* Cambia el color en hover */
+    background-color: #c54848; /* Cambia el color en hover */
     transform: translateY(-3px);
 }
 
