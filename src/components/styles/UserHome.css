@@ -1,0 +1,154 @@
+/* Estilos generales para la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #170027; /* Fondo verde claro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.user-home {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Sombra más profunda */
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Título principal */
+.user-home h1 {
+    font-size: 2.5em;
+    color: #4caf50; /* Verde brillante */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Formulario para registrar código */
+.form-registrar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.form-registrar label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.form-registrar input {
+    padding: 12px;
+    font-size: 1.1em;
+    width: 60%;
+    margin-bottom: 15px;
+    border: 2px solid #4caf50; /* Verde */
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s ease;
+}
+
+.form-registrar input:focus {
+    border-color: #388e3c; /* Verde más oscuro */
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+.form-registrar button {
+    background-color: #4caf50; /* Verde */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-registrar button:hover {
+    background-color: #388e3c; /* Verde más oscuro */
+    transform: scale(1.05);
+}
+
+.form-registrar button:active {
+    transform: scale(1);
+}
+
+/* Botón de refrescar */
+.btn-refresh {
+    background-color: #1e88e5; /* Azul brillante */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.btn-refresh:hover {
+    background-color: #1565c0; /* Azul más oscuro */
+    transform: scale(1.05);
+}
+
+/* Tabla de códigos registrados */
+.tabla-codigos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.tabla-codigos th, .tabla-codigos td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.tabla-codigos th {
+    background-color: #1e88e5; /* Azul brillante */
+    color: white;
+    font-size: 1.1em;
+}
+
+.tabla-codigos td {
+    background-color: #f9f9f9;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.tabla-codigos tr:nth-child(even) {
+    background-color: #e8f5e9; /* Verde muy claro */
+}
+
+.tabla-codigos tr:hover {
+    background-color: #c8e6c9; /* Verde más intenso */
+    transform: translateY(-2px);
+}
+
+.tabla-codigos td[colspan="3"] {
+    font-style: italic;
+    color: #888;
+}
+
+/* Ajustes de responsividad */
+@media (max-width: 768px) {
+    .form-registrar input {
+        width: 80%;
+    }
+
+    .form-registrar button {
+        width: 80%;
+    }
+
+    .tabla-codigos th, .tabla-codigos td {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}

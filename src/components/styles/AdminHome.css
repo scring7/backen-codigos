@@ -1,0 +1,77 @@
+.container {
+    height: 300px;
+    display: grid;
+    place-items: center;
+    background-color: #f5f5f5; /* Fondo gris claro */
+}
+
+#editSignos {
+    display: block;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 450px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #343a40; /* Fondo gris oscuro */
+    color: #f8f9fa; /* Blanco suave */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra más marcada */
+}
+
+#btnEditar {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border-radius: 12px;
+    background-color: #007bff; /* Azul brillante */
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s ease;
+    cursor: pointer;
+}
+
+#btnEditar:hover {
+    background-color: #0056b3; /* Azul oscuro en hover */
+    transform: translateY(-3px);
+}
+
+#btnEditar:active {
+    transform: translateY(1px);
+}
+
+#textoAdmin {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #ced4da; /* Gris claro */
+    text-align: center;
+    margin-top: 15px;
+}
+
+#textoEditar {
+    display: flex;
+    align-items: center;
+    background-color: #6c757d; /* Gris intermedio */
+    color: #f8f9fa; /* Blanco suave */
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+#btnHomeAdmin {
+    margin-top: 25px;
+    padding: 12px 25px;
+    border-radius: 12px;
+    background-color: #28a745; /* Verde brillante */
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s ease;
+    cursor: pointer;
+}
+
+#btnHomeAdmin:hover {
+    background-color: #218838; /* Verde oscuro en hover */
+    transform: translateY(-3px);
+}
+
+#btnHomeAdmin:active {
+    transform: translateY(1px);
+}
