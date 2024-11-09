@@ -17,7 +17,7 @@ function Ganadores() {
         }
 
         try {
-            const response = await fetch("https://back-sorteo.vercel.app", {
+            const response = await fetch("https://fron-sigma.vercel.app", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

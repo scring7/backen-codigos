@@ -1,154 +1,104 @@
-/* Estilos generales para la página */
+/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #170027; /* Fondo verde claro */
-    color: #333;
-    margin: 0;
-    padding: 0;
+    background-color: #48a3af; /* Cambia el color de fondo del cuerpo si deseas un tono más suave */
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
 
-/* Contenedor principal */
-.user-home {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Sombra más profunda */
-    max-width: 800px;
-    width: 100%;
+form {
+    background-color: #3d1414;
+    border-radius: 20px; /* Borde más redondeado */
+    box-shadow: 0 8px 30px rgba(165, 67, 67, 0.15); /* Sombra ligeramente más fuerte */
+    padding: 40px;
+    width: 350px;
     text-align: center;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transición en sombra y escala */
 }
 
-/* Título principal */
-.user-home h1 {
-    font-size: 2.5em;
-    color: #4caf50; /* Verde brillante */
+form:hover {
+    box-shadow: 0 10px 35px rgba(26, 15, 15, 0.2); /* Más sombra en hover */
+    transform: scale(1.02); /* Efecto de aumento en hover */
+}
+
+h1#txtBienvenida {
+    font-size: 28px;
+    color: #33231e; /* Color de texto ajustado */
     margin-bottom: 20px;
-    font-weight: bold;
+    animation: bounce 1s ease-in-out 1;
 }
 
-/* Formulario para registrar código */
-.form-registrar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
+h4.txt {
+    font-size: 16px;
+    color: #746363;
+    margin-bottom: 5px;
+    text-align: left;
 }
 
-.form-registrar label {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.form-registrar input {
-    padding: 12px;
-    font-size: 1.1em;
-    width: 60%;
+input.entry {
+    width: 100%;
+    padding: 10px;
     margin-bottom: 15px;
-    border: 2px solid #4caf50; /* Verde */
-    border-radius: 8px;
-    transition: border-color 0.3s, box-shadow 0.3s ease;
+    border: 2px solid #181615; /* Color de borde actualizado */
+    border-radius: 10px; /* Borde más redondeado */
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.form-registrar input:focus {
-    border-color: #388e3c; /* Verde más oscuro */
-    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+input.entry:focus {
+    border-color: #3e0361; /* Color de borde en foco */
+    box-shadow: 0 0 8px rgba(23, 83, 60, 0.4); /* Sombra de foco */
 }
 
-.form-registrar button {
-    background-color: #4caf50; /* Verde */
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.1em;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.form-registrar button:hover {
-    background-color: #388e3c; /* Verde más oscuro */
-    transform: scale(1.05);
-}
-
-.form-registrar button:active {
-    transform: scale(1);
-}
-
-/* Botón de refrescar */
-.btn-refresh {
-    background-color: #1e88e5; /* Azul brillante */
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.1em;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-bottom: 20px;
-}
-
-.btn-refresh:hover {
-    background-color: #1565c0; /* Azul más oscuro */
-    transform: scale(1.05);
-}
-
-/* Tabla de códigos registrados */
-.tabla-codigos {
+input#btnEnviar {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    transition: box-shadow 0.3s ease;
+    padding: 12px; /* Un poco más de padding para el botón */
+    background-color: #061d3b; /* Color de fondo actualizado */
+    color: rgb(71, 16, 42);
+    border: none;
+    border-radius: 10px; /* Borde más redondeado para el botón */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.tabla-codigos th, .tabla-codigos td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: center;
+input#btnEnviar:hover {
+    background-color: #740a0a; /* Cambia el color en hover */
+    transform: translateY(-3px);
 }
 
-.tabla-codigos th {
-    background-color: #1e88e5; /* Azul brillante */
-    color: white;
-    font-size: 1.1em;
+input#btnEnviar:active {
+    transform: translateY(1px);
 }
 
-.tabla-codigos td {
-    background-color: #f9f9f9;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
+button#forgotPasswordLink {
+    margin-top: 15px;
+    background-color: transparent;
+    color: #a1b820; /* Color de enlace actualizado */
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+    transition: color 0.3s ease;
 }
 
-.tabla-codigos tr:nth-child(even) {
-    background-color: #e8f5e9; /* Verde muy claro */
+button#forgotPasswordLink:hover {
+    color: #35504c; /* Cambia el color del enlace en hover */
 }
 
-.tabla-codigos tr:hover {
-    background-color: #c8e6c9; /* Verde más intenso */
-    transform: translateY(-2px);
-}
-
-.tabla-codigos td[colspan="3"] {
-    font-style: italic;
-    color: #888;
-}
-
-/* Ajustes de responsividad */
-@media (max-width: 768px) {
-    .form-registrar input {
-        width: 80%;
+/* Animations */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
     }
-
-    .form-registrar button {
-        width: 80%;
+    50% {
+        transform: translateY(-10px);
     }
-
-    .tabla-codigos th, .tabla-codigos td {
-        padding: 10px;
-        font-size: 0.9em;
+    100% {
+        transform: translateY(0);
     }
 }

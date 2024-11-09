@@ -25,7 +25,7 @@ function AdminHome({user}){
         // console.log(signoEditar);
         // console.log(textoEditar);
         e.preventDefault();
-        fetch(`https://back-sorteo.vercel.app${signoEditar}`, {
+        fetch(`https://fron-sigma.vercel.app${signoEditar}`, {
             method: 'PATCH',
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({"textoEditar": textoEditar})
