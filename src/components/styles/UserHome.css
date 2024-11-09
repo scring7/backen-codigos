@@ -10,7 +10,7 @@ body {
 }
 
 form {
-    background-color: #3d1414;
+    background-color: #2cad66;
     border-radius: 20px; /* Borde más redondeado */
     box-shadow: 0 8px 30px rgba(165, 67, 67, 0.15); /* Sombra ligeramente más fuerte */
     padding: 40px;
@@ -50,7 +50,7 @@ input.entry {
 }
 
 input.entry:focus {
-    border-color: #3e0361; /* Color de borde en foco */
+    border-color: #09972c; /* Color de borde en foco */
     box-shadow: 0 0 8px rgba(23, 83, 60, 0.4); /* Sombra de foco */
 }
 
